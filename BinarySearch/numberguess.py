@@ -6,7 +6,7 @@ from random import randint
 
 
 def get_max():
-    return int(input("max (int) = "))
+    return int(input('max (int) = '))
 
 
 def generate_data(n):
@@ -51,9 +51,9 @@ def binary_search(data, value):
 MAX = get_max()
 VALUE = get_value(MAX)
 
-print("VALUE is {}".format(VALUE))
+print('VALUE is {}'.format(VALUE))
 
-option = input("\nL - Linear Search\nB - Binary Search\n").upper()
+option = input('\nL - Linear Search\nB - Binary Search\n').upper()
 result = []
 
 if option == 'L':
@@ -62,5 +62,5 @@ elif option == 'B':
     result = binary_search(generate_data(MAX), VALUE)
 
 if result:
-    print("""IA required {} attempts to correctly guess.
-{}""".format(len(result), result))
+    print('AI required {} attempts to correctly guess.\n{}'
+          .format(len(result), result))

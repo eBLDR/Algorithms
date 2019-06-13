@@ -18,18 +18,18 @@ from random import randint
 
 
 def generate_data(n):
-    data = []
+    data_ = []
     for i in range(n):
-        data.append(randint(1, 100))
+        data_.append(randint(1, 100))
 
-    return data
+    return data_
 
 
 def insert(array, index):
     value = array[index]
     for i in range(index, 0, -1):
-        if value < array[i-1]:
-            array[i] = array[i-1]
+        if value < array[i - 1]:
+            array[i] = array[i - 1]
         else:
             array[i] = value
             break
@@ -43,13 +43,13 @@ def insertion_sort(array):
 
 
 def insertion_sort_2(array):
-   for index in range(1, len(array)):
-     current_value = array[index]
-     position = index
-     while position > 0 and array[position-1] > current_value:
-         array[position] = array[position-1]
-         position -= 1
-     array[position] = current_value
+    for index in range(1, len(array)):
+        current_value = array[index]
+        position = index
+        while position > 0 and array[position - 1] > current_value:
+            array[position] = array[position - 1]
+            position -= 1
+        array[position] = current_value
 
 
 data = generate_data(25)

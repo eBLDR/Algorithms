@@ -14,11 +14,11 @@ from random import randint
 
 
 def generate_data(n):
-    data = []
+    data_ = []
     for i in range(n):
-        data.append(randint(1, 100))
+        data_.append(randint(1, 100))
 
-    return data
+    return data_
 
 
 def swap(array, index_1, index_2):

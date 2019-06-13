@@ -20,7 +20,7 @@ PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23,
 
 
 def get_value():
-    return int(input("Is prime? (<100): "))
+    return int(input('Is prime? (<100): '))
 
 
 def binary_search(data, target):
@@ -45,6 +45,6 @@ VALUE = get_value()
 
 result = binary_search(PRIMES, VALUE)
 if result == 1:
-    print("{} is prime.".format(VALUE))
+    print('{} is prime.'.format(VALUE))
 elif result == -1:
-    print("{} is not prime.".format(VALUE))
+    print('{} is not prime.'.format(VALUE))
